@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">AndroidManifest</string>
     <string name="remember_me">Remember Me !</string>
+    <string name="setting">Settings</string>
+    <string name="profile">Profile</string>
+    <string name="logout">Logout</string>
 </resources>
