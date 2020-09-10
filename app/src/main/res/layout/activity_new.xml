@@ -12,13 +12,14 @@
             android:layout_centerInParent="true"
             android:layout_alignParentTop="true"
             android:id="@+id/profile_image"
-            android:layout_width="196dp"
-            android:layout_height="196dp"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
             android:src="@drawable/weather"
             app:civ_border_width="1dp"
             app:civ_border_color="#FF000000"/>
 
         <TextView
+
             android:padding="8dp"
             android:layout_centerInParent="true"
             android:background="@color/colorAccent"
@@ -35,12 +36,20 @@
 
 
         <TextView
+            android:id="@+id/centerText"
             android:layout_centerInParent="true"
             android:textSize="20sp"
             android:textColor="@android:color/black"
             android:text="I am in center of my parent."
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
+
+        <com.badoualy.stepperindicator.StepperIndicator
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/centerText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:stpi_stepCount="5"/>
 
         <Button
             android:textSize="32sp"

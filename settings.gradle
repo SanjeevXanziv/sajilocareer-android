@@ -1,2 +1,3 @@
 include ':app'
+//name of the project is AndroidManifest
 rootProject.name = "AndroidManifest"

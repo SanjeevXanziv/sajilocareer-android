@@ -63,7 +63,7 @@
 
     <LinearLayout
         android:orientation="horizontal"
-        android:weightSum="3"
+        android:weightSum="4"
         android:background="@android:color/darker_gray"
         android:layout_width="match_parent"
         android:layout_height="60dp">
@@ -92,6 +92,13 @@
 
         </Button>
 
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/profile"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
     </LinearLayout>
 
 
@@ -100,7 +107,7 @@
         android:weightSum="3"
         android:background="@android:color/darker_gray"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <Button
             android:layout_weight="1"
@@ -127,6 +134,17 @@
         </Button>
 
     </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:gravity="bottom"
+        android:layout_gravity="bottom"
+        android:background="@color/colorAccent"
+        android:textColorHint="@android:color/black"
+        android:hint="User name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.appcompat.widget.AppCompatEditText>
 
 
 </LinearLayout>
