@@ -52,6 +52,7 @@
         android:layout_height="wrap_content"/>
 
     <ImageView
+        android:id="@+id/imageView"
         android:contentDescription="@string/app_name"
         android:scaleType="fitXY"
         android:src="@drawable/banner"

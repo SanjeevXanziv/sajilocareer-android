@@ -52,6 +52,7 @@
             app:stpi_stepCount="5"/>
 
         <Button
+            android:id="@+id/logout"
             android:textSize="32sp"
             android:textAllCaps="false"
             android:layout_margin="32dp"
