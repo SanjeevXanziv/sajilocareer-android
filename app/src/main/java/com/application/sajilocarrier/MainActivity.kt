@@ -1,4 +1,4 @@
-package com.application.androidmanifest
+package com.application.sajilocarrier
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this,NewActivity::class.java)
         intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP
         startActivity(intent)
-        finish()
+//        finish()
     }
 
     private fun clickImageView(){

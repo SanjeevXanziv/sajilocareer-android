@@ -1,4 +1,4 @@
-package com.application.androidmanifest
+package com.application.sajilocarrier
 
 import org.junit.Test
 
