@@ -6,8 +6,6 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
-import com.google.android.material.appbar.AppBarLayout
 import kotlinx.android.synthetic.main.activity_new.*
 
 
@@ -22,8 +20,15 @@ class NewActivity : AppCompatActivity() {
     }
 
     private fun setToolBar(){
-//        setSupportActionBar(hamroToolbar)
+        setSupportActionBar(hamroToolbar)
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+
+        /*if(supportActionBar != null){
+            supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+        }else{
+            Log.d("SupportAction : ", "no Appbar")
+        }*/
+
 
     }
 
@@ -60,17 +65,13 @@ class NewActivity : AppCompatActivity() {
 
         }
 
-        /*else if(id == R.id.homeAsUp){
-            onBackPressed()
-        }*/
-
-        else{
-
-            onBackPressed()
-        }
-
 
         return super.onOptionsItemSelected(item)
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return super.onSupportNavigateUp()
     }
 
 

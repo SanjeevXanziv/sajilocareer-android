@@ -16,7 +16,8 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".NewActivity"
-            android:label="New Activity">
+            android:label="New Activity"
+            android:theme="@style/AppTheme.NoActionBar">
 
             <!--
             <intent-filter>
